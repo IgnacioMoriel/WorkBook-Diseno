@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+
+p {
+    font-size: 18px;
+	color: #999999;
+    line-height: 1.8;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+a:hover { text-decoration: none; }
+
+
+/************************************NavBar*/
+.navbar{
+    background-color: #182430;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    min-height: 100px;
+}
+
+.nav-link {
+	color: #FFFFFF;
+}
+.nav-link:hover { 
+	color: #D5D5D5; 
+}
+.navbar-brand{
+	color: #FFFFFF ;	
+}
+.navbar-brand:hover{
+	color: #D5D5D5;
+}
+.navbar-toggler { 
+	font-size: 40px;
+	color: white;
+}
+.navbar-toggler:focus { outline: none;
+background-color: white;
+color: black;
+}
+
+/*********************************************************Imagen fondo*/
+
+.fondo{
+	/*background-image: url("imagenes/fondo3.jpg");*/
+    background-size: cover;
+    padding-top: 60px;
+    min-height: 660px; /*minimo de largo*/
+    background: transparent;
+    color: white;
+    
+}
+
+.fondo h1{ 
+	font-size: 130px;
+	font-weight: 700; /*negrita*/
+    line-height: 112px; /*interlineado*/
+    z-index: 2;
+	text-align: left;
+}
+
+span{
+    color: rgb(95, 204, 255);
+}
+
+.palabrascentro2 h3{
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    padding-top: 160px;
+    font-size: 70px;
+    font-weight: 500;
+    color: white;
+    line-height: 80px;
+    z-index: 2;
+}
+.palabrascentro{
+	max-width: 1100px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    padding-top: 70px;
+    z-index: 2;
+}
+.palabrascentro h3{
+    font-size: 70px;
+    font-weight: 500;
+    /*margin-top: 10px;*/
+    color: white;
+    line-height: 80px; /*interlineado*/
+}
+
+/***********************************************************Portafolio*/
+.row{
+    margin-bottom: 40px;
+}
+
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    margin: 10px ;
+	border-radius: 2px;
+	margin-bottom: 40px;
+}
+
+.portfolio-container img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.portfolio-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-details {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+}
+
+.portfolio-details h2 {
+    margin-bottom: 0px;
+}
+
+.portfolio-details a h2, .portfolio-details a p {
+    color: #FFFFFF;
+}
+
+/***********************************************************footer*/
+
+.bgDark { 
+	background-color: #182430;
+}
+
+footer {
+    padding: 30px 0;
+    padding-bottom: 25px;
+    text-align: center;
+    color: white;
+    
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer .list-inline .list-inline-item {
+    padding: 5px 35px 5px 35px;
+}

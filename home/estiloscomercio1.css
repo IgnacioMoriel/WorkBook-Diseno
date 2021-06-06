@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*********************************************NavBar*/
+
+.navbar{
+    background-color: #182430;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    min-height: 100px;
+}
+
+.nav-link {
+	color: #FFFFFF;
+}
+.nav-link:hover { 
+	color: #D5D5D5; 
+}
+.navbar-brand{
+	color: #FFFFFF ;	
+}
+.navbar-brand:hover{
+	color: #D5D5D5;
+}
+.navbar-toggler { 
+	font-size: 40px;
+	color: white;
+}
+.navbar-toggler:focus { outline: none;
+background-color: white;
+color: black;
+}
+/****************************************Carruselde publicaciones*/
+.divider { 
+	border-bottom: 2px solid grey; 
+}
+
+
+.carousel {
+    padding: 20px;
+    text-align: left;
+}
+.carousel-container {
+    max-width: 100%;
+	text-align: left;
+    
+}
+.carousel-item p {
+    font-size: 26px;
+    font-weight: 400;
+    color: grey;
+}
+
+.carousel-indicators li {
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    margin: 0 8px;
+}
+
+.carousel-control-next, .carousel-control-prev { 
+    color: white;
+    opacity: 1;
+    width: 5%;
+}
+
+.rating i { /*Estrellas*/
+    color: gold;
+    font-size: 26px;
+}
+
+.control-button { /*direccionales de carrusel*/
+    background-color: black;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 20px;
+}
+/***********************************estudiantes*/
+.estudiantes-user {
+   
+    margin: 2 auto;
+    text-align: left;
+}
+img{
+	float: left;
+}
+h5{
+	padding-left: 220px
+}
+
+.estudiantes-user h6 {
+    margin-bottom: 0px;
+}
+
+.estudiantes-user span {
+    font-size: 12px;
+}
+
+.estudiantes-user img {
+    border-radius: 50%;
+    max-width: 50px;
+    text-align: left;
+}
+.row{
+  color: #000000;
+  font-weight: 900;
+}
+
+
+/*****************************************Footer*/
+.bgDark { 
+	background-color: #182430;
+}
+
+footer {
+    padding: 30px 0;
+    padding-bottom: 25px;
+    text-align: center;
+    color: white;
+    
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer .list-inline .list-inline-item {
+    padding: 5px 35px 5px 35px;
+}

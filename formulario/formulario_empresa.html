@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Fuente -->  
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet"> 	
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="estiloformulario.css" rel="stylesheet">
+<script src="validaempresa.js"></script>
+
+<title>formulario_Empresa</title>
+</head>
+
+<body>
+    
+	<nav class="navbar navbar-expand-lg">
+		<div class ="container">
+  		<a class="navbar-brand" href="inicio.html" style="font-size: 35px">WorkBook</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="icon ion-md-menu"></i>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active"><a class="nav-link" href="../home/inicio.html" id="inicio">Inicio</a></li>
+			  <li class="nav-item"><a class="nav-link" href="../home/comercio1.html" id="publicaciones">Publicaciones</a></li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="lugares" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lugares</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" href="#">Guayas</a>
+						  <a class="dropdown-item" href="#">Pichincha</a>
+						  <a class="dropdown-item" href="#">Cuenca</a>
+						  <a class="dropdown-item" href="#">Manabi</a>
+						  <a class="dropdown-item" href="#">Los Rios</a>
+						</div></li>
+			  <li class="nav-item"><a class="nav-link" href="../home/acercade.html" id="acerca">Acerca de Nosotros</a></li>
+			  <li class="nav-item"><a class="nav-link" href="../index.html" id="salir">Salir</a></li>
+			</ul>
+
+		  </div>
+	</div>
+</nav>
+	 <h2 style="text-align: center;padding: 20px; font-weight: 300">Quieres dar a conocer tu organizacion?, registrate para que el mundo te conozca.</h2>
+	
+	<main>
+       
+        <form>
+           
+            <strong>Nombre<sup>*</sup> </strong>: 
+            <input type="text" name="nombre" id="nombreempresa" style=" width: 73%" placeholder="Ingrese nombre de su empresa">
+			<br><br>
+            <strong>Tipo de empresa<sup>*</sup> </strong>:
+            <input type="radio" name="tipo"  id="tipoe" value="publica">Pública <input type="radio" name="tipo"  id="tipo" value="privada" checked>Privada <br><br>
+			<strong>Ruc o Rise <sup>*</sup> </strong>: 
+			<input type="text" name="identificacion" id="ruc" style=" width: 50%" placeholder="Ingrese Ruc o Rise (13 dígitos)"><br><br>
+
+            <strong>Correo electronico empresarial <sup>*</sup> </strong>:
+			<input type="email" name="emailempresa" id="emailempresa" style=" width: 37%" placeholder="ejemplo@mail.com"> <br><br>
+
+            <strong>Número de contacto de la empresa <sup>*</sup> </strong>: 
+			<input type="text" name="celular" id="phone" placeholder="Ingresar 10 digitos"> <br><br>
+
+            <strong>Dirección  <sup>*</sup> </strong>: 
+			<input type="text" name="direccion" id="dirempresa" style=" width: 70%" placeholder="Ingrese su dirección"> <br><br>
+
+            <strong>Ciudad <sup>*</sup> </strong>: 
+			<input type="text" name="ciudad" id="ciudadempresa" placeholder="Ingrese su ciudad"> <br><br>
+
+            <strong>Provincia <sup>*</sup> </strong>:
+            <select name="provincia" id="provempresa">
+                <option value="0">Seleccione</option>
+                <option value="Azuay">Azuay</option>
+                <option value="Guayas">Guayas</option>
+                <option value="Manabí">Manabí</option>
+                <option value="Pichincha">Pichincha</option>
+            </select><br><br>
+			
+			<strong>Años laborando  <sup>*</sup> </strong>: 
+                        <input type="number" name="titulo" id="aniosempresa" placeholder=""> <br><br>
+			
+			  <strong>Sector de trabajo <sup>*</sup> </strong>:
+            <select name="Profesion" id="sectorEmpresa">
+                <option value="0">Seleccione</option>
+                <option value="1">Salud</option>
+				<option value="2">Comercio</option>
+				<option value="3">Alimentación</option>
+				<option value="4">Obra civil</option>
+				<option value="5">Educación</option>
+				<option value="6">Hoteleria</option>
+				<option value="7">Mecánica</option>
+				<option value="8">Agricultura</option>
+				<option value="9">Petroleo</option>
+				<option value="10">Gestor de Projectos</option>
+                                <option value="11">Telecomunicaciones</option>
+                                <option value="12">Servicios Financieros</option>
+                                <option value="13">Otros</option>
+            </select><br><br>
+			
+
+			<strong>Escriba una breve descripcion de la empresa<sup>*</sup> </strong>:<br>
+			<textarea name="descripcion" id="menEmpresa" rows="7" cols="65" placeholder="Ingrese una breve descripción del hambiente laboral" style="border-radius: 30px; text-align: center"></textarea> <br><br>
+			
+           
+
+            
+            <p><i> (*) Datos obligatorios</i></p>
+
+            <button type="submit" id="enviaempresa">Enviar datos</button>
+			<button type="reset">Limpiar datos</button>
+        </form>
+    </main>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>	
+</body>
+</html>

@@ -1,0 +1,55 @@
+/************************************************NavBar*/
+.navbar{
+    background-color: #182430;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    min-height: 100px;
+}
+
+.nav-link {
+	color: #FFFFFF;
+}
+.nav-link:hover { 
+	color: #D5D5D5; 
+}
+.navbar-brand{
+	color: #FFFFFF ;	
+}
+.navbar-brand:hover{
+	color: #D5D5D5;
+}
+.navbar-toggler { 
+	font-size: 40px;
+	color: white;
+}
+.navbar-toggler:focus { outline: none;
+background-color: white;
+color: black;
+}
+
+/********************************************************fOOTER*/
+.bgDark { 
+	background-color: #182430;
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer .list-inline .list-inline-item {
+    padding: 0px 35px 0px 35px;
+}
+
+.error{
+    background-color: rgb(95, 204, 255);
+    border: solid 1px #63a6ff;
+}

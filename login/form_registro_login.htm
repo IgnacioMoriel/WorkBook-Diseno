@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="est_from_regist_log.css" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+    <!--Animacion de ciertas Etiquetas-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Efecto Scroll en imagen-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+    <script src="../formulario/validaciones_form_prof.js"></script>
+    <title>Registro :)</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand disabled animate__animated animate__slideInLeft"
+                style="font-size: 35px; color: white;">WorkBook</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="icon ion-md-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="quesomos.html" id="que_es">¿Qué es
+                            WorkBook?</a></li>
+                    <li class="nav-item "><a class="nav-link" href="../index.html" id="registro"
+                            style="color: white;">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2 style="text-align: center;padding: 40px; font-weight: 300">Registrate y se parte de esta gran Comuidad ;) </h2>
+	
+	<main>
+        
+        <form>
+       <div class="formu">    
+            <strong>Nombres<sup>*</sup> </strong>: 
+			<input type="text" name="nombre" id="pnombre" placeholder="Nombre Primer ">
+			<input type="text" name="snombre" id="snombre" placeholder="Segundo Nombre"><br><br>
+            
+			<strong>Apellidos<sup>*</sup> </strong>: 
+			<input type="text" name="papellido" id="papellido" placeholder="Apellido Paterno"> 
+		 	<input type="text" name="mapellido" id="mapellido" placeholder="Apellido Materno"><br><br>
+			
+			
+			<strong>Cedula o Pasaporte <sup>*</sup> </strong>: 
+			<input type="text" name="identificacion" id="identificacion" placeholder="Ingrese cédula (10 dígitos)"><br><br>
+
+            <strong>Correo Electronico Personal <sup>*</sup> </strong>:
+			<input type="email" name="email" id="email" placeholder="ejemplo@mail.com"> <br><br>
+
+            <strong>Número Celular personal <sup>*</sup> </strong>: 
+			<input type="text" name="celular" id="celular" placeholder="Ingresar 10 digitos"> <br><br>
+
+            <strong>Dirección Particular <sup>*</sup> </strong>: 
+			<input type="text" name="direccion" id="direccion" placeholder="Ingrese su dirección"> <br><br>
+
+            <strong>Ciudad <sup>*</sup> </strong>: 
+			<input type="text" name="ciudad" id="ciudad" placeholder="Ingrese su ciudad"> <br><br>
+
+            <strong>Provincia <sup>*</sup> </strong>:
+            <select name="provincia" id="provincia">
+                <option value="0">Seleccione</option>
+                <option value="Azuay">Azuay</option>
+                <option value="Guayas">Guayas</option>
+                <option value="Manabí">Manabí</option>
+                <option value="Pichincha">Pichincha</option>
+            </select><br><br>
+			
+			<strong>Titulo <sup>*</sup> </strong>: 
+			<input type="text" name="titulo" id="titulo" placeholder="Ingrese su Titulo"> <br><br>
+			
+			  <strong>Profesion <sup>*</sup> </strong>:
+            <select name="Profesion" id="Profesion">
+                <option value="0">Seleccione</option>
+                <option value="ingsis">Ingenieria en Sistemas</option>
+				<option value="ingtel">Ingenieria en Telecomunicaciones</option>
+				<option value="ingsof">Ingenieria en software</option>
+				<option value="sisinf">Ingenieria Civil</option>
+				<option value="ingcom">Ingenieria Comercial</option>
+				<option value="ingind">Ingenieria Industrial</option>
+				<option value="ingamb">Ingenieria Ambiental</option>
+				<option value="ingagr">Ingenieria Agricola</option>
+				<option value="sisinf">Sistemas de la Informacion</option>
+				<option value="gespro">Gestor de Projectos</option>
+                <option value="arq">Arquitecto</option>
+				<option value="dr">Doctor</option>
+				<option value="enf">Enfermero</option>
+				<option value="abg">Abogado</option>
+                <option value="eco">Economista</option>
+				<option value="con">Contador</option>
+				<option value="lcdedu">Lcd. Educacion</option>
+				<option value="trad">traductor</option>
+            </select><br><br>
+			
+			<strong>¿Experiencia Laboral? <sup>*</sup> </strong>:
+			<input type="checkbox" name="explab" id="explab" value=" " 
+				onmousedown="this.form.nombreempresa.disabled = this.checked, 
+				this.form.cargo.disabled = this.checked,
+				this.form.start.disabled = this.checked" 
+			 checked><br><br>
+			
+			<strong>Nombre de la Empresa <sup>*</sup> </strong>: 
+			<input type="text" name="nombreempresa" id="nombreempresa" placeholder="    Nombre de la Empresa"   > <br><br>
+			
+			<strong>Cargo o Ocupacion <sup>*</sup> </strong>: 
+			<input type="text" name="cargo" id="cargo" placeholder="      Cargo o Ocupacion"> <br><br>
+			
+			 <strong>Fecha de Vigencia del Contrato<sup>*</sup> </strong>: 
+			<input type="date" id="start" name="trip-start" ><br><br>
+			
+			<div><strong>Estado Civil<sup>*</sup> </strong>:
+			Casado <input type="checkbox" name="casado" id="casado" value=" " 
+				 onmousedown="this.form.parejanombre.disabled = this.checked, 
+				this.form.parejaapellido.disabled = this.checked,
+				this.form.telesp.disabled = this.checked" 
+			 ><br>
+			
+			<strong>Nombre y Apellido de su Pareja <sup>*</sup> </strong>: 
+			<input type="text" name="casado" id="parejanombre" placeholder="      Nombre de su Esposa" >
+			<input type="text" name="parejaapellido" id="parejaapellido" placeholder="      Apellido de su Esposa" > <br>
+			
+			<strong>Telefono de su Esposa <sup>*</sup> </strong>: 
+			<input type="text" name="telesp" id="telesp" placeholder="telefono de su esposa"> <br>
+			
+			 <strong>¿Tiene hijos? <sup>*</sup> </strong>:
+			Si <input type="radio" name="hijos" id="hijossi" value="Si">
+			No <input type="radio" name="hijos" id="hijosno" value="No" checked> <br><br></div>
+		   </div>
+			<div class="cuadro">
+				<strong>Escriba una breve descripcion de usted<sup>*</sup> </strong>:<br>
+				<textarea name="descripcion" id="descripcion" rows="7" cols="80" placeholder="Ingrese una breve descripcion o como se define en el ambito profesional" style="border-radius: 30px; text-align: center"></textarea> <br>
+			</div>
+           
+
+            
+            <p><i> (*) Datos obligatorios</i></p>
+
+            <button type="submit" id="enviar">Enviar datos</button>
+			<button type="reset" >Limpiar datos</button>
+        </form>
+    </main>
+
+    <footer class="bgDark">
+        <div class="container">
+            <h2 style="font-size: 30px"><span><b>WorkBook</b></span></h2>
+            <ul class="list-inline">
+                <li class="list-inline-item footer-menu"><a href="from_contacto_login.html"
+                        style="font-weight: 700;">Contacto</a></li>
+                <li class="list-inline-item footer-menu disabled" ><a href="terminosycondic_login.html" style="font-weight: 700;">Terminos y Condiciones
+                    </a></li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="http://www.instagram.com"><i
+                            class="icon ion-logo-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="http://www.facebook.com"><i
+                            class="icon ion-logo-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="http://www.youtube.com"><i class="icon ion-logo-youtube"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="http://www.whatsapp.com"><i
+                            class="icon ion-logo-whatsapp"></i></a></li>
+                <li class="list-inline-item"><a href="http://www.twitter.com"><i class="icon ion-logo-twitter"></i></a>
+                </li>
+            </ul>
+            <small><b>Desarrollo de Aplicaicones WEB UG.</b> ©2020 All Rights Reserved. Created by Grupo </small>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
